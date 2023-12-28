@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:provider_demo/page/widget/input_widget.dart';
 import 'package:provider_demo/page/widget/output_widget.dart';
 
-/// Application page,
-/// Increment Button and Output Text are in separate, stateless widgets
+/// Application page
+/// Button Widget and Output Text Widget are in separate classes and files
 class CounterPage extends StatelessWidget {
   const CounterPage({super.key});
 

@@ -5,8 +5,6 @@ import 'domain_type.dart';
 mixin DomainBridge {
 
   /// Construct the domain and return it as a singleton instance
-  DomainType get domain {
-    Domain();
-    return Domain.domain();
-  }
+  DomainType get domain => Domain.domain();
+
 }

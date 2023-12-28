@@ -1,12 +1,10 @@
 import 'domain_type.dart';
 
-/// Return a singleton DomainType
+/// Return a singleton Domain
 class Domain {
 
   Domain();
 
-  static DomainType domain() {
-    return DomainType();
-  }
+  static DomainType domain() => DomainType();
 
 }

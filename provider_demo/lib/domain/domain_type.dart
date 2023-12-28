@@ -3,7 +3,6 @@ import '/domain/counter_model.dart';
 /// Set the contract for the business domain
 /// provide a template for a singleton object that can be passed in the bridge
 abstract class DomainType {
-
   factory DomainType() = _DomainType;
 
   CounterModel get counterModel;
@@ -19,9 +18,7 @@ class _DomainType implements DomainType {
   @override
   CounterModel counterModel = CounterModel();
 
-  factory _DomainType() {
-    return _instance;
-  }
+  factory _DomainType() => _instance;
 
   _DomainType._internal();
 

@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:provider_demo/domain/domain_bridge.dart';
-import 'package:provider_demo/use_case/use_case_bridge.dart';
-import 'package:provider_demo/provider/increment_provider.dart';
+import 'package:provider_demo/state_mgmt/increment_provider.dart';
 import 'package:provider_demo/page/counter_page.dart';
 
 /// Example of Counter App Using Provider for state management
@@ -13,11 +11,9 @@ void main() {
   runApp(const ProviderApp());
 }
 
-/// Create a Provider for State Management
+/// Create a Provider
 /// Use a Separate class so tests can call this and maintain Provider context
-class ProviderApp extends StatelessWidget with
-    DomainBridge,
-    UseCaseBridge {
+class ProviderApp extends StatelessWidget {
   const ProviderApp({super.key});
 
   @override
