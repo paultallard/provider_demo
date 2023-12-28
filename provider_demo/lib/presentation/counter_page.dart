@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:provider_demo/page/widget/input_widget.dart';
-import 'package:provider_demo/page/widget/output_widget.dart';
+import 'package:provider_demo/presentation/widget/input_widget.dart';
+import 'package:provider_demo/presentation/widget/output_widget.dart';
 
 /// Application page
 /// Button Widget and Output Text Widget are in separate classes and files
